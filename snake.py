@@ -2,6 +2,7 @@
 import turtle
 import time
 import random
+import winsound
 
 delay = 0.1
 score = 0
@@ -10,7 +11,7 @@ high_score = 0
 
 # Creating a window screen
 wn = turtle.Screen()
-wn.title("Snake Game by Korsat X Parmaga")
+wn.title("Snake Game by houssam X achraf")
 wn.bgcolor("#000087")
 # the width and height can be put as user's choice
 wn.setup(width=600, height=600)
@@ -23,7 +24,7 @@ head = turtle.Turtle()
 head.shape("square")
 head.color("white")
 # head.penup()  # stop drawing lines when moving
-head.speed(0)
+head.speed(3)
 head.goto(0, 0)
 head.direction = "Stop"
 
